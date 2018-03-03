@@ -1,0 +1,11 @@
+<h2>Playlist Accounts</h2>
+<hr />
+<%= link_to 'Add Playlist', new_account_path %>
+<h3>Your Playlists</h3>
+<ul>
+  <% @accounts.each do |a| %>
+    <li>
+      <%= a.name %>
+    </li>
+  <% end %>
+</ul>
