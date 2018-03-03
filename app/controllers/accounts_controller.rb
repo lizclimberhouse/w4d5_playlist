@@ -25,7 +25,7 @@ class AccountsController < ApplicationController
     end
   end
 
-  def udpate
+  def update
     if @account.update(account_params)
       redirect_to accounts_path
     else
@@ -35,6 +35,7 @@ class AccountsController < ApplicationController
 
   def destroy
     @account.destroy
+    redirect_to accounts_path
   end
 
   private 

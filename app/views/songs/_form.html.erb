@@ -1,0 +1,9 @@
+<%= form_for [@account, @song] do |i| %>
+  <%= i.label :name %>
+  <%= i.text_field :name, require: true%>
+  <br>
+  <%= i.label :lyric %>
+  <%= i.text_field :lyric %>
+  <hr>
+  <%= i.submit %>
+<% end %>

@@ -5,7 +5,7 @@
 <ul>
   <% @accounts.each do |a| %>
     <li>
-      <%= a.name %>
+      <%= link_to a.name, a %>
     </li>
   <% end %>
 </ul>

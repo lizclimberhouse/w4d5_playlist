@@ -1,2 +1,8 @@
-<h1>Accounts#show</h1>
-<p>Find me in app/views/accounts/show.html.erb</p>
+<h1>Playlist: <%= @account.name %></h1>
+<%= link_to 'Back', accounts_path%>
+
+<h2><%= link_to 'View Songs', songs_path%></h2>
+
+<%= link_to 'Edit Playlist Name |', edit_account_path(@account) %>
+<%= link_to ' Delete Playlist', @account, method: :delete %>
+
